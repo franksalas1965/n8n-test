@@ -8,6 +8,8 @@
   },
   "packageManager": "pnpm@10.16.1",
   "scripts": {
+    "build:render": "NODE_OPTIONS='--max_old_space_size=4096' turbo run build",
+    "build": "turbo run build",
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
     "build": "turbo run build",
